@@ -1,11 +1,11 @@
 {
   "name": "Galactic Love Letter",
-  "short_name": "LoveMission",
+  "short_name": "LoveApp",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#0d0d2b",
-  "description": "A cosmic love letter with math, Tagalog message, animations, and countdowns.",
+  "description": "A love letter app with offline support, countdowns, and galaxy vibes.",
   "icons": [
     {
       "src": "icon-192.png",

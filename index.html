@@ -3,225 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>3rd Monthsary!</title>
-  <link rel="manifest" href="manifest.json">
+  <title>3rd Monthsary Letter 💌</title>
+  <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#0d0d2b" />
-  <link rel="apple-touch-icon" href="icon-192.png">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap');
 
     body {
-      font-family: 'Orbitron', sans-serif;
-      background-color: #000;
-      overflow: hidden;
-      position: relative;
-      color: #f1f1f1;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      margin: 0;
       padding: 2rem;
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: radial-gradient(circle at top, #1e1e40, #000);
+      color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      text-align: center;
     }
 
-    .stars {
-      position: absolute;
-      width: 200%;
-      height: 200%;
-      background: url('https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/media/starfield.png');
-      animation: moveStars 100s linear infinite;
-      opacity: 0.15;
-      z-index: 0;
-    }
-
-    @keyframes moveStars {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(-50%, -50%); }
-    }
-
-    .orbit {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 150px;
-      height: 150px;
-      margin: -75px 0 0 -75px;
-      border: 1px dashed rgba(255, 255, 255, 0.2);
-      border-radius: 50%;
-      animation: rotate 10s linear infinite;
-      z-index: 1;
-    }
-
-    .heart {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 20px;
-      height: 20px;
-      background-color: #ff4d88;
-      border-radius: 50%;
-      transform: translateX(-50%);
-      box-shadow: 0 0 8px #ff4d88;
-    }
-
-    @keyframes rotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .container {
-      z-index: 2;
-      max-width: 600px;
-      position: relative;
-    }
-
-    h1 {
-      font-size: 2rem;
-      color: #ffe600;
-      margin-bottom: 1rem;
-    }
-
-    .countdown {
-      font-size: 1rem;
-      color: #ff91e3;
-      margin-top: 0.5rem;
-    }
-
-    .math-love, .tagalog-letter {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 1.5rem;
-      border-radius: 1rem;
-      margin-top: 2rem;
+    .letter {
+      max-width: 500px;
+      font-size: 1.1rem;
       line-height: 1.8;
-      color: #dcdcff;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
     }
 
     .footer {
       margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #888;
+      font-size: 0.9rem;
+      color: #aaa;
     }
 
-    .shooting-star {
-      position: absolute;
-      width: 80px;
-      height: 2px;
-      background: linear-gradient(-45deg, white, transparent);
-      opacity: 0.7;
-      animation: shooting 2s linear infinite;
+    .countdown {
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: #ffddcc;
     }
 
-    @keyframes shooting {
-      0% {
-        transform: translate(100vw, 0) rotate(-45deg);
-        opacity: 1;
-      }
-      100% {
-        transform: translate(-100vw, 100vh) rotate(-45deg);
-        opacity: 0;
-      }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div class="stars"></div>
-  <div class="orbit"><div class="heart"></div></div>
-  <div class="shooting-star" style="top:10%; left:90%; animation-delay: 1s;"></div>
-  <div class="shooting-star" style="top:30%; left:80%; animation-delay: 2s;"></div>
-  <div class="shooting-star" style="top:50%; left:95%; animation-delay: 3.5s;"></div>
+  <div class="letter">
+    <div class="title">Happy 3rd Monthsary Baby!💖</div>
+    <p>Hi baby. Una sa lahat, gusto kong ipaalam kung gaano ako nagpapasalamat sa'yo. Sa tatlong buwan na magkasama tayo, sobrang dami na nating pinagdaanan. Masaya, nakakakilig, minsan malungkot at may mga hindi pagkakaintindihan pero sa dulo ng lahat ng iyon, ikaw pa rin ang pinipili ko.</p>
+    <p>Hindi ko akalaing aabot tayo ng ganito pero heto tayo. Hindi perfect pero totoo. Ramdam ko yung pagmamahal mo at araw-araw akong ginaganahang mahalin ka pa lalo. Thank you sa effort, sa pasensya at sa pag-aalaga mo sa akin.</p>
+    <p>Iba ka talaga. Hindi lang sa lambing mo kundi sa kung paano mo ako pinatibok nang todo. Pangako ko sa'yo, habang tumatagal tayo, mas lalo kong iingatan ang relasyon natin. Hindi ito laro sa akin, mahal kita nang totoo.</p>
+    <p>Happy 3rd Monthsary baby ko. Ikaw lang talaga habang buhay. Mahal na mahal kita 💗</p>
+    
+    <div class="countdown" id="kissCountdown"></div>
+    <div class="countdown" id="nextCountdown"></div>
 
-  <div class="container">
-    <h1>🚀 Mission: You & Me</h1>
-    <div class="countdown" id="sinceKiss">Since April 10, 2025: ⏳</div>
-    <div class="countdown" id="nextMonthsary">Next Monthsary In: ⌛</div>
-
-    <div class="tagalog-letter">
-      <p>Hi baby. Una sa lahat, gusto kong ipaalam kung gaano ako nagpapasalamat sa'yo. Sa tatlong buwan na magkasama tayo, sobrang dami na nating pinagdaanan. Masaya, nakakakilig, minsan malungkot at may mga hindi pagkakaintindihan pero sa dulo ng lahat ng iyon, ikaw pa rin ang pinipili ko.</p>
-      <p>Hindi ko akalaing aabot tayo ng ganito pero heto tayo. Hindi perfect pero totoo. Ramdam ko yung pagmamahal mo at araw-araw akong ginaganahang mahalin ka pa lalo. Thank you sa effort, sa pasensya at sa pag-aalaga mo sa akin.</p>
-      <p>Iba ka talaga. Hindi lang sa lambing mo kundi sa kung paano mo ako pinatibok nang todo. Pangako ko sa'yo, habang tumatagal tayo, mas lalo kong iingatan ang relasyon natin. Hindi ito laro sa akin, mahal kita nang totoo.</p>
-      <p>Happy 3rd Monthsary baby ko. Ikaw lang talaga habang buhay. Mahal na mahal kita 💗</p>
-    </div>
-
-    <div class="math-love" id="loveStats"></div>
-
-    <div class="math-love">
-      <p>You + Me = Constant</p>
-      <p>Limit love(t) → ∞ = You</p>
-      <p>Acceleration of feelings = Δ❤️ / Δt</p>
-      <p>Your love is my gravity: F = G(m₁m₂/r²)</p>
-      <p>Time may be relative, but you are my always</p>
-      <p>I don’t need a telescope to see that you're my universe 💖</p>
-    </div>
-
-    <div class="footer">
-      First Day of Loving Me: April 10, 2025<br>
-      Next Mission: August 10, 2025
-    </div>
+    <div class="footer">June 30, 2025</div>
   </div>
 
   <script>
-    const firstLoveDate = new Date("2025-04-10T00:00:00");
-    const nextMonthsary = new Date("2025-08-10T00:00:00");
-
     function updateCountdowns() {
-      const now = new Date();
+      const now = new Date().getTime();
+      const firstKiss = new Date("2025-04-10T12:05:32").getTime();
+      const nextMonthsary = new Date("2025-08-10T00:00:00").getTime();
 
-      // Since April 10
-      let diff1 = Math.floor((now - firstLoveDate) / 1000);
-      let days1 = Math.floor(diff1 / (60 * 60 * 24));
-      let hours1 = Math.floor((diff1 % (60 * 60 * 24)) / 3600);
-      let minutes1 = Math.floor((diff1 % 3600) / 60);
-      let seconds1 = diff1 % 60;
+      const lovedMeFor = now - firstKiss;
+      const untilNext = nextMonthsary - now;
 
-      document.getElementById("sinceKiss").textContent =
-        `You've loved me for: ${days1}d ${hours1}h ${minutes1}m ${seconds1}s`;
+      const days = Math.floor(lovedMeFor / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((lovedMeFor % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((lovedMeFor % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((lovedMeFor % (1000 * 60)) / 1000);
 
-      // Until Next Monthsary
-      let diff2 = Math.floor((nextMonthsary - now) / 1000);
-      if (diff2 >= 0) {
-        let days2 = Math.floor(diff2 / (60 * 60 * 24));
-        let hours2 = Math.floor((diff2 % (60 * 60 * 24)) / 3600);
-        let minutes2 = Math.floor((diff2 % 3600) / 60);
-        let seconds2 = diff2 % 60;
+      document.getElementById("kissCountdown").innerHTML =
+        `You've loved me for ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds 🥹`;
 
-        document.getElementById("nextMonthsary").textContent =
-          `Next Monthsary In: ${days2}d ${hours2}h ${minutes2}m ${seconds2}s`;
+      if (untilNext > 0) {
+        const nd = Math.floor(untilNext / (1000 * 60 * 60 * 24));
+        const nh = Math.floor((untilNext % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const nm = Math.floor((untilNext % (1000 * 60 * 60)) / (1000 * 60));
+        const ns = Math.floor((untilNext % (1000 * 60)) / 1000);
+        document.getElementById("nextCountdown").innerHTML =
+          `Next Monthsary in ${nd}d ${nh}h ${nm}m ${ns}s 🌙`;
       } else {
-        document.getElementById("nextMonthsary").textContent =
-          "Next Monthsary has arrived 💘";
+        document.getElementById("nextCountdown").innerHTML = `Happy Next Monthsary 💖`;
       }
     }
 
-    function updateLoveStats() {
-      const now = new Date();
-      const diffMs = now - firstLoveDate;
-
-      const seconds = Math.floor(diffMs / 1000);
-      const minutes = Math.floor(diffMs / (1000 * 60));
-      const hours = Math.floor(diffMs / (1000 * 60 * 60));
-      const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-
-      document.getElementById("loveStats").innerHTML = `
-        <p>You've loved me for:</p>
-        <p>• ${days} days</p>
-        <p>• ${hours} hours</p>
-        <p>• ${minutes} minutes</p>
-        <p>• ${seconds} seconds</p>
-        <p>• ${diffMs.toLocaleString()} milliseconds</p>
-      `;
-    }
-
-    setInterval(() => {
-      updateCountdowns();
-      updateLoveStats();
-    }, 1000);
+    setInterval(updateCountdowns, 1000);
+    updateCountdowns();
 
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('✅ Service Worker Registered'))
-        .catch(err => console.log('❌ Service Worker Error:', err));
+        .then(reg => console.log('✅ Service Worker Registered:', reg))
+        .catch(err => console.error('❌ Service Worker Failed:', err));
     }
   </script>
 </body>
